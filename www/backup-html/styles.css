@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body { 
+background:url(pics/bg_back.png);
+padding: 0;
+margin:0;}
+
+#all {
+  margin: 0; 
+  
+}
+
+#container {
+margin: 0;
+padding: 0; 
+width: 1024px;
+padding-right: 10px
+}
+
+table {
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  width: 1024px;
+  }
+  
+td {
+  margin: 0;
+  padding: 0;
+  background:url(pics/sommertupp3.png) bottom left no-repeat;
+  width: 100%;
+  border: solid 1px #978981;
+}
+
+#menu_table {width: 373px}
+
+#menu_table td {
+  background: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+  
+#flash {height:150px}
+#holder {
+height: 300px;
+min-width: 1024px}
+
+h1 {font-family:Garamond,serif; font-size:1.1em;color:#88C53F}
+h2 {font-family:Garamond,serif; font-size:0.9em;color:#88C53F}
+p {font-family:sans-serif; font-size:0.69em;color:#402E00;}
+
+span {cursor:pointer}
+strong {font:"Garamond" bold 1.25em }
+em {font-size:95%}
+
+#logo {margin:20% 0 0 34px;background: url(pics/logo_M_tag_RGB.png) no-repeat center; height: 150px;width: 343px}
+/*#shiatsu {float:right; margin-right:0px; margin-top:30%;z-index: "0"}*/
+#infotxt {margin:0;width:35%;height:300px;padding:0 10px;overflow:auto;z-index:"10" }
+
+
+#frame {height:300px;width: 35%; background: transparent}
+iframe {width:40%;margin:0;width:auto;height:250px;border-style:none;background-color:transparent}
+#infot {background: transparent}
+
+#menus {margin:0; padding:0; width:800px;height:90px;}
+#menu {margin:0; padding:0; width:800px;height:80px;}
+.menu {margin:0 0 20px auto;font-size:0.75em;background:url(pics/bg_link.jpg) repeat-x ;height:14px;width:200px;padding:0 0 0 2px;text-align: right}
+.menu a:link {font-family:serif;color:#402E00;text-decoration:none;}
+.menu a:visited {font-family:serif;color:#978981;text-decoration:none;}
+.menu a:hover {font-family:serif;color:#402E00;text-decoration:underline;}
+
+.arrange {width:373px; height:30px;float:right}
+
+.shiatsu, .shiatsu * {padding: 0;list-style: none;vertical-align: top}
+.shiatsu {display:block;margin: 0;font-family:serif;font-size:0.75em;color:#402E00;text-decoration:none;text-align: right; background-image:url(pics/bg_link.jpg);padding:2px 0 0 2px;width:100px}
+.shiatsu li {position:relative;display: inline;text-align: left;padding-left:2px}
+.shiatsu ul {position:absolute;bottom:1em;display:none;}
+.shiatsu ul li {display: list-item;}
+.shiatsu li:hover ul {display: block}
+.shiatsu a:link {font-family:serif; color:#402E00; text-decoration:none;}
+.shiatsu a:visited {font-family:serif; color:#402E00; text-decoration:none;}
+.shiatsu a:hover {font-family:serif; color:#402E00; text-decoration:underline;}
+
+.shiatsu_, .shiatsu_ * {padding: 0;list-style: none;vertical-align: top}
+.shiatsu_ {display:block;position:relative;margin:0;font-family:serif;font-size:0.75em;color:#978981;text-decoration:none;background-image:url(pics/bg_link.jpg);padding:2px 5px 0 0;width: 120px}
+.shiatsu_ li {position:relative;display: inline;text-align: left;padding-left:2px}
+.shiatsu_ ul {position:absolute;bottom:1em;display:none;}
+.shiatsu_ ul li {display: list-item;}
+.shiatsu_ li:hover ul {display: block;}
+.shiatsu_ a:link {font-family:serif; color:#402E00; text-decoration:none;}
+.shiatsu_ a:visited {font-family:serif; color:#402E00; text-decoration:none;}
+.shiatsu_ a:hover {font-family:serif; color:#402E00; text-decoration:underline;}
+
+.adresse {color:#88C53F;height:14px;text-align: right}
+.adresse a:link {color:#88C53F; text-decoration:none}
+.adresse a:visited {color:#88C53F; text-decoration:none}
+.adresse a:hover {color:#88C53F; text-decoration:underline}
+
+.pad_top_30 {
+  padding-top: 30px;
+}
+
+.pad_top_300 {
+  padding-top: 300px;
+}
+
+.pad_left_30 {
+  padding-left: 30px;
+}
+
+.marg_top_30 {
+  margin-top: 30px;
+}
+
+.marg_bot_100 {
+  margin-bottom: 100px
+  }
+  
+.marg_top_100 {
+  margin-top: 100px
+  }
+
+.floater {float:left}
+.floater_right {float:right}
+.clearer {clear:both}
+
+.dotit {border:dotted 1px}

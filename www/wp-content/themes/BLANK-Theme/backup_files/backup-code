@@ -1,0 +1,63 @@
+
+$('#flash').find('br').remove();
+$('#flash').children().hide();
+var array = $('#flash').find('h1:first').next();
+length = array.length;
+//alert(array.html());
+// set interval
+//var tid = setInterval(mycode, 2000);
+/*
+for( i=0; i < length; i++){
+  myArray[i];
+}
+*/
+  setInterval(mycode, 2000);
+
+function mycode() {
+  array.each(function(){
+    $(this).closest('#flash').find('h1:first').fadeIn(2000, function() {
+      $(this).fadeOut(2000);
+      $(this).animate({left:'-=200'},2000);
+      $(array).each(function(){
+        $(this).fadeIn(2000, function(){
+          $(this).fadeOut(2000);
+          $(this).animate({left:'-=200'},2000);
+        });
+      });
+    });
+  });
+}
+
+function abortTimer() { // to be called when you want to stop the timer
+  clearInterval(tid);
+}
+
+
+/*
+function runIt() {
+  var elem = $('#flash').find('h1:first');
+  $(elem).show('slow');
+  $(elem).animate({left:'+=200'},2000);
+  $(elem).animate({left:'-=200'},1500);
+  $(elem).hide('slow');
+  $(elem).show(1200);
+  $(elem).slideUp('normal');
+  elem = $('#flash').find('h1').next();
+}
+
+   
+setInterval( runIt, 2000 );
+*/
+
+
+
+//alert(numContents)
+//alert(currentContent.html())
+/*
+
+    fx: 'fade', 
+    cssBefore: { right: 1232 }, 
+    animIn:  { left: 0 }, 
+    animOut: { left: -1232 }
+*/
+//
