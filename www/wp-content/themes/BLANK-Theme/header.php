@@ -51,7 +51,7 @@
   ?>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/commons.js" charset="utf-8"></script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bottom.js" charset="utf-8"></script>
-	<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.72.js"></script>
+	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
   <script type="text/javascript" src="http://malsup.github.com/jquery.easing.1.1.1.js"></script>
 	
 </head>

@@ -1,8 +1,8 @@
-$(function(){
+jQuery(function(){
 
-//var elems = $('#flash').find('h3');
+//var elems = jQuery('#flash').find('h3');
 
-$('#flash').cycle({ 
+jQuery('#flash').cycle({ 
     fx:      'all',
     randomizeEffects: true, 
     cssBefore:{  
@@ -19,86 +19,86 @@ $('#flash').cycle({
         top: 100 
     }, 
     timeoutFn: function (curr, next, opts, isForward) {
-      var index = $(this).parent().children().index(this); 
+      var index = jQuery(this).parent().children().index(this); 
         return (opts.currSlide + 1) * 800;
     },
     delay: -2000, 
     autostop: 1,
     end: function() {  
       delay: -6000;
-      $('#flash').hide('slow');
-      $('#holder').css('margin-top','40px');
-      $('#bg').animate({'height': '544px'},600);
-      $('#pauseButton, #resumeButton').hide();  
+      jQuery('#flash').hide('slow');
+      jQuery('#holder').css('margin-top','40px');
+      jQuery('#bg').animate({'height': '544px'},600);
+      jQuery('#pauseButton, #resumeButton').hide();  
     }
 });
 
 
-$('.shiatsu li, .menu_sec li').find('a').click(function(){
-    $('#flash').cycle('stop');
-    $('#flash').hide('slow');
-    $('#holder').css('margin-top','40px');
-    $('#bg').animate({'height': '544px'},600);
-    $('#pauseButton, #resumeButton').hide();
+jQuery('.shiatsu li, .menu_sec li').find('a').click(function(){
+    jQuery('#flash').cycle('stop');
+    jQuery('#flash').hide('slow');
+    jQuery('#holder').css('margin-top','40px');
+    jQuery('#bg').animate({'height': '544px'},600);
+    jQuery('#pauseButton, #resumeButton').hide();
 });
 
 
-  image = $('#back').find('img');
-    $(window).bind('resize', function(ev) {
+  image = jQuery('#back').find('img');
+    jQuery(window).bind('resize', function(ev) {
         resize_image(image);
     });
     function resize_image(image) {
-    	var ratio = Math.max($(window).width()/image.width(),$(window).height()/image.height());
-    	var w_ratio = Math.max($('#all').width()/image.width(),$('#all').height()/image.height());
+    	var ratio = Math.max(jQuery(window).width()/image.width(),jQuery(window).height()/image.height());
+    	var w_ratio = Math.max(jQuery('#all').width()/image.width(),jQuery('#all').height()/image.height());
     	
     	
-    	if ($(window).width() > $(window).height()) {
+    	if (jQuery(window).width() > jQuery(window).height()) {
     		image.css({width:image.width()*ratio,height:'auto'});
     	} else {
     		image.css({width:'auto',height:image.height()*ratio});
     	}	
     }
-   $all = $('#all'); 
-    $(window).bind('resize', function(ev) {
-        resize_image($all);
+   jQueryall = jQuery('#all'); 
+    jQuery(window).bind('resize', function(ev) {
+        resize_image(jQueryall);
     });
-    function resize_image($all) {
-    	var ratio = Math.max($(window).width()/$all.width(),$(window).height()/$all.height());
-    	var w_ratio = Math.max($('body').width()/$all.width(),$('body').height()/$all.height());
+    function resize_image(jQueryall) {
+    	var ratio = Math.max(jQuery(window).width()/jQueryall.width(),jQuery(window).height()/jQueryall.height());
+    	var w_ratio = Math.max(jQuery('body').width()/jQueryall.width(),jQuery('body').height()/jQueryall.height());
     	
     	
-    	if ($(window).width() > $(window).height()) {
-    		$all.css({width:$all.width()*ratio,height:'auto'});
+    	if (jQuery(window).width() > jQuery(window).height()) {
+    		jQueryall.css({width:jQueryall.width()*ratio,height:'auto'});
     	} else {
-    		$all.css({width:'auto',height:$all.height()*ratio});
+    		jQueryall.css({width:'auto',height:jQueryall.height()*ratio});
     	}	
     }
 
-    $('#bg').height($('#container').height());
+    jQuery('#bg').height(jQuery('#container').height());
     
     
-      (function($){
-        $.fn.extend({
+      (function(jQuery){
+        jQuery.fn.extend({
             center: function () {
                 return this.each(function() {
-                    var left = ($(window).width() - $(this).outerWidth()) / 2;
-                    $(this).css({position:'absolute', margin:0, left: (left > 0 ? left : 0)+'px'});
+                    var left = (jQuery(window).width() - jQuery(this).outerWidth()) / 2;
+                    jQuery(this).css({position:'absolute', margin:0, left: (left > 0 ? left : 0)+'px'});
                 });
             }
         }); 
     })(jQuery);
 
-    $('#bg').center();
-    $('#container').center();
-    $(window).bind('resize', function() {
-        $('#container').center({transition:300});
-        $('#bg').center({transition:300});
+    jQuery('#bg').center();
+    jQuery('#container').center();
+    jQuery(window).bind('resize', function() {
+        jQuery('#container').center({transition:300});
+        jQuery('#bg').center({transition:300});
     });
 
-  $('ul > li:last-child').css({'margin':'0', 'border': 'none'});
-  $('#menu-third-menu').find('a').each(function(){
-    if( $(this).attr('title') == 'blank' ) {
-      $(this).attr('target', '_blank');
+  jQuery('ul > li:last-child').css({'margin':'0', 'border': 'none'});
+  jQuery('#menu-third-menu').find('a').each(function(){
+    if( jQuery(this).attr('title') == 'blank' ) {
+      jQuery(this).attr('target', '_blank');
     }
   });
 });
